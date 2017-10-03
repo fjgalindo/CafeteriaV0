@@ -1,0 +1,33 @@
+/* https://color.adobe.com/es/Cafeteria-FSL2-color-theme-10041720 */
+
+@import "mixin";
+
+header {
+    /*@include layout(100%, 20%);*/
+    display: grid;
+    grid-template-columns: \[col1\] 40vw \[col2\] 60vw \[col3\];
+
+    h1 {
+
+    }
+    #navegacion {
+        ul {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                margin-left: 4%;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+/*
+@media (){
+    header {
+
+        grid-template-areas: ....;
+    }
+}
+*/
