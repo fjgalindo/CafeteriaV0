@@ -6,3 +6,9 @@
     width: $ancho;
     height: $alto;
 }
+
+@mixin centrar-vertical {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

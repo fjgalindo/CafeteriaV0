@@ -1,15 +1,34 @@
 /* https://color.adobe.com/es/Cafeteria-FSL2-color-theme-10041720 */
+body {
+  margin: 0%; }
+
 header {
-  /*@include layout(100%, 20%);*/
   display: grid;
-  grid-template-columns: \[col1\] 40vw \[col2\] 60vw \[col3\]; }
-  header #navegacion ul {
+  grid-template-columns: [col1] 40vw [col2] 60vw [col3];
+  grid-template-rows: [row1] 5vw [row2];
+  grid-template-areas: "logo  menu"; }
+  header h1 {
     display: inline-flex;
     align-items: center;
-    justify-content: center; }
-    header #navegacion ul li {
-      margin-left: 4%;
-      list-style-type: none; }
+    justify-content: center;
+    justify-content: flex-start;
+    margin: 0%;
+    grid-area: "logo"; }
+  header #navegacion {
+    grid-area: "menu";
+    text-align: right;
+    font-size: 1.5vw; }
+    header #navegacion ul {
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0%;
+      margin: 0%; }
+      header #navegacion ul li {
+        margin-left: 2%;
+        list-style-type: none; }
 
 /*
 @media (){
