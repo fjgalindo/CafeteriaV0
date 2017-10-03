@@ -1,0 +1,8 @@
+@mixin centrar {
+    text-align: center;
+}
+
+@mixin layout($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
