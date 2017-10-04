@@ -1,34 +1,52 @@
 /* https://color.adobe.com/es/Cafeteria-FSL2-color-theme-10041720 */
 
 @import "mixin";
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+$colorPrincipal: #FF5700;
 
-body{
+body {
     margin: 0%;
+    background-image: url(../img/promo/foto.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 40vw [col2\] 60vw [col3]");
+    grid-template-columns: unquote("[col1] 50vw [col2\] 50vw [col3]");
     grid-template-rows: unquote("[row1] 5vw [row2]");
     grid-template-areas: "logo  menu";
-
+    background-color: rgba(33, 33, 33, 0.48);
     h1 {
         @include centrar-vertical;
         justify-content: flex-start;
-        margin: 0%;
+        margin-left: 2%;
         grid-area: "logo";
+        font-size: 2.2vw;
+        font-family: "Merienda One", "cursive";
+        color: $colorPrincipal;
     }
     #navegacion {
         grid-area: "menu";
-        text-align: right;
-        font-size: 1.5vw;
+        font-size: 1.3em;
+        font-family: 'Roboto', sans-serif;
         ul {
             @include layout(100%, 100%);
             @include centrar-vertical;
             padding: 0%;
             margin: 0%;
             li {
-                margin-left: 2%;
+                color: whitesmoke;
+                text-shadow: 1px 1px 3px black;
+                float: right;
+                margin-left: 4%;
+                font-weight: 600;
                 list-style-type: none;
             }
         }
