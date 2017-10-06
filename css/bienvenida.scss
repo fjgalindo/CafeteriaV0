@@ -1,8 +1,11 @@
 @import "mixin";
+@import "header";
+
 #galeria {
     @include layout(auto, auto);
 }
 
 #sobre_nosotros{
+    background-color: $bannerFondo;
     @include layout(auto, auto);
 }

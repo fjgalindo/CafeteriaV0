@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACA,QAAS;ECIL,KAAK,EDHW,IAAI;ECIpB,MAAM,EDJgB,IAAI;;AAG9B,eAAe;ECAX,KAAK,EDCW,IAAI;ECApB,MAAM,EDAgB,IAAI",
-"sources": ["bienvenida.scss","mixin.scss"],
-"names": [],
-"file": "bienvenida.css"
-}

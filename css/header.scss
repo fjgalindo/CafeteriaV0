@@ -6,7 +6,7 @@ header {
     grid-template-columns: unquote("[col1] 50vw [col2\] 50vw [col3]");
     grid-template-rows: unquote("[row1] 5vw [row2]");
     grid-template-areas: "logo  menu";
-    background-color: rgba(33, 33, 33, 0.48);
+    background-color: rgba(33, 33, 33, 0.66);
     h1 {
         @include centrar-vertical;
         justify-content: flex-start;
