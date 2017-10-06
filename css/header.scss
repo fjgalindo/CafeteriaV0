@@ -1,3 +1,6 @@
+@import "colores";
+@import "mixin";
+
 header {
     display: grid;
     grid-template-columns: unquote("[col1] 50vw [col2\] 50vw [col3]");
