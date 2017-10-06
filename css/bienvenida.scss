@@ -1,0 +1,8 @@
+@import "mixin";
+#galeria {
+    @include layout(auto, auto);
+}
+
+#sobre_nosotros{
+    @include layout(auto, auto);
+}
