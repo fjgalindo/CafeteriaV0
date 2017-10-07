@@ -42,8 +42,10 @@ gulp.task('scss', function () {
         .pipe(gulp.dest(destino_scss))
         // Se actualiza la vista del navegador.
         .pipe(browserSync.stream())
+        /*
         //Mensaje gracias al plugin `gulp-notify`
         .pipe(notify("Se ha compilado el SCSS"));
+        */
 });
 
 
@@ -53,7 +55,7 @@ gulp.task('compress-js', function () {
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest(destino_js))
-        .pipe(notify("Se ha comrimido el JS"));
+        .pipe(notify("Se ha comprimido el JS"));
 });
 
 // Recarga la ejecución de javascript.
