@@ -40,8 +40,10 @@ gulp.task('scss', function () {
         .pipe(sass().on('error', sass.logError))
         //Carpeta donde se guardaran los archivos `.css` compilado
         .pipe(gulp.dest(destino_scss))
+        // Se actualiza la vista del navegador.
+        .pipe(browserSync.stream())
         //Mensaje gracias al plugin `gulp-notify`
-        .pipe(notify("Se han compilado los SCSS"));
+        .pipe(notify("Se ha compilado el SCSS"));
 });
 
 
@@ -51,7 +53,7 @@ gulp.task('compress-js', function () {
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest(destino_js))
-        .pipe(notify("Se han comprimido los JS"));
+        .pipe(notify("Se ha comrimido el JS"));
 });
 
 // Recarga la ejecución de javascript.
@@ -63,7 +65,8 @@ gulp.task('js-watch', ['compress-js'], function (done) {
 // Actualizar Imagenes
 gulp.task('images', function () {
     gulp.src(fuente_imagenes)
-        .pipe(gulp.dest(destino_imagenes));
+        .pipe(gulp.dest(destino_imagenes))
+        .pipe(browserSync.stream());
 })
 
 
