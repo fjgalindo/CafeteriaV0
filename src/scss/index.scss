@@ -1,0 +1,40 @@
+/* https://color.adobe.com/es/Cafeteria-FSL2-color-theme-10041720 */
+@charset 'UTF-8';
+
+@import "./general/mixin";
+@import "./general/header";
+@import "./general/colores";
+
+// Fuentes
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    margin: 0%;
+    background-image: url(../img/promo/foto.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#galeria {
+    @include layout(auto, auto);
+}
+
+#sobre_nosotros{
+    background-color: $bannerFondo;
+    @include layout(auto, auto);
+}
+
+/*
+@media (){
+    header {
+
+        grid-template-areas: ....;
+    }
+}
+*/

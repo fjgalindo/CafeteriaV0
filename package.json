@@ -1,0 +1,27 @@
+{
+  "name": "cafeteria",
+  "version": "0.0.1",
+  "description": "Interfaz Cafeteria IES Fuente San Luis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjgalindo/CafeteriaV0.git"
+  },
+  "author": "Javier Galindo, Vicente Cabedo, Alejandro Sahuquillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjgalindo/CafeteriaV0/issues"
+  },
+  "homepage": "https://github.com/fjgalindo/CafeteriaV0#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^3.0.0"
+  }
+}
