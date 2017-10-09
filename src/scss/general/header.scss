@@ -1,34 +1,37 @@
 @import "colores";
 @import "mixin";
 
+$colorHeader: rgba(44, 44, 44, 0.9);
+
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 50vw [col2\] 50vw [col3]");
-    grid-template-rows: unquote("[row1] 5vw [row2]");
+    grid-template-columns: unquote("[col1] 30vw [col2\] 70vw [col3]");
+    grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
-    background-color: rgba(33, 33, 33, 0.66);
+    background-color: $colorHeader;
     h1 {
         @include centrar-vertical;
         justify-content: flex-start;
         margin-left: 2%;
         grid-area: "logo";
-        font-size: 2.2vw;
+        font-size: 1.8em;
         font-family: "Merienda One", "cursive";
         color: $colorPrincipal;
     }
     #navegacion {
         grid-area: "menu";
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: 'Roboto', sans-serif;
+
         ul {
             @include layout(100%, 100%);
             @include centrar-vertical;
             padding: 0%;
             margin: 0%;
+            justify-content: none;
             li {
                 color: whitesmoke;
                 text-shadow: 1px 1px 3px black;
-                float: right;
                 margin-left: 4%;
                 font-weight: 600;
                 list-style-type: none;

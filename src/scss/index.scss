@@ -9,7 +9,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
 body {
     margin: 0%;
     background-image: url(../img/promo/foto.jpg);
@@ -21,13 +20,25 @@ body {
     background-size: cover;
 }
 
-#galeria {
-    @include layout(auto, auto);
+#contenido {
+    @include layout(100%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 #sobre_nosotros{
     background-color: $bannerFondo;
-    @include layout(auto, auto);
+    @include layout(85%, 85%);
+    text-align: justify;
+    display: grid;
+    grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
+    grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
+    div {
+        @include layout(95%, 95%);
+
+    }
 }
 
 /*
