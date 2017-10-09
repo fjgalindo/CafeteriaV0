@@ -1,4 +1,5 @@
 /* https://color.adobe.com/es/Cafeteria-FSL2-color-theme-10041720 */
+
 @charset 'UTF-8';
 
 @import "./general/mixin";
@@ -21,23 +22,25 @@ body {
 }
 
 #contenido {
-    @include layout(100%, 100%);
+    @include layout(100%,
+    100%);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-#sobre_nosotros{
+#sobre_nosotros {
     background-color: $bannerFondo;
-    @include layout(85%, 85%);
+    @include layout(85%,
+    85%);
     text-align: justify;
     display: grid;
     grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
     grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
     div {
         @include layout(95%, 95%);
-
+        margin: 2%;
     }
 }
 
