@@ -5,10 +5,12 @@
 @import "./general/mixin";
 @import "./general/header";
 @import "./general/colores";
+@import "./login";
 
 // Fuentes
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 body {
     margin: 0%;
@@ -23,7 +25,7 @@ body {
 
 #contenido {
     @include layout(100%,
-    100%);
+    90%);
     display: flex;
     align-items: center;
     justify-content: center;
