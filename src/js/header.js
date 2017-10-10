@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function eventos() {
-    var boton_login = document.getElementById("boton_login");
+    var boton_login = document.getElementById("entrar");
     boton_login.addEventListener("click", function(){
         this.preventDefault()
         var cuadro_login = document.getElementById('login');
