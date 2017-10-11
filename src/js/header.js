@@ -3,7 +3,7 @@ function loguear(evento){
     console.log('1');
 
     var divlog =document.getElementById("login");
-
+    alert(divlog.innerHTML);
     if(divlog.style.display=="none"||divlog.style.display==""){
         console.log('2');
         divlog.style.display="block";
