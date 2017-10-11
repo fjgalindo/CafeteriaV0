@@ -1,20 +1,17 @@
-function loguear(evento){
+function logear(evento) {
     evento.preventDefault();
     console.log('1');
 
-    var divlog =document.getElementById("login");
-    alert(divlog.innerHTML);
-    if(divlog.style.display=="none"||divlog.style.display==""){
+    var divlog = document.getElementById("login");
+    if (divlog.style.display == "none" || divlog.style.display == "") {
         console.log('2');
-        divlog.style.display="block";
-    }else{
+        divlog.style.display = "block";
+    } else {
         console.log('3');
-        divlog.style.display="none";
+        divlog.style.display = "none";
     }
 }
 
-window.onload=function(){
-    document.getElementById("entrar").addEventListener("click",loguear,false);
-
+window.onload = function () {
+    document.getElementById("entrar").addEventListener("click", logear, false);
 }
-
