@@ -1,15 +1,15 @@
 
-
 #menu {
     display:grid;
     grid-template-columns:[col1] 25vw [col2] 75vw [col3];
     grid-template-rows: [row1] 25vh [row2] ;.001
 
 
-    navMenu{
+    #navMenu{
+        border: black 2px solid;
         background-color: $bannerFondo;
         grid-column-start: col1;
-        grid-column-end: col3;
+        grid-column-end: col2;
     }
 
 }
