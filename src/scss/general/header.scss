@@ -5,7 +5,7 @@ $colorHeader: rgba(44, 44, 44, 0.9);
 
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 30vw [col2\] 70vw [col3]");
+    grid-template-columns: unquote("[col1] 30vw [col2] 70vw [col3]");
     grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
     background-color: $colorHeader;
