@@ -1,11 +1,11 @@
 /* ======== DIRECTORIOS FUENTE =========== */
-var fuente_html = './src/templates/**/*',
+const fuente_html = './src/templates/**/*',
     fuente_scss = './src/scss/**/*.scss',
     fuente_js = './src/js/**/*.js',
     fuente_imagenes = './src/img/**/*.{png,jpg,ico,jpeg,gif,svg}';
 
 /* ======== DIRECTORIOS DESTINO ========== */
-var destino_html = './build/',
+const destino_html = './build/',
     destino_scss = './build/stylesheets/',
     destino_js = './build/js/',
     destino_imagenes = './build/img/';
@@ -52,10 +52,10 @@ gulp.task('scss', function () {
 // Comprimir JS
 gulp.task('compress-js', function () {
     gulp.src(fuente_js)
-        .pipe(concat('bundle.js'))
+        /*.pipe(concat('bundle.js'))*/
         .pipe(uglify())
         .pipe(gulp.dest(destino_js))
-        .pipe(notify("Se ha comprimido el JS"));
+        /*.pipe(notify("Se ha comprimido el JS"));*/
 });
 
 // Recarga la ejecución de javascript.
