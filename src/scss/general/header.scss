@@ -7,6 +7,7 @@ header {
     grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
     background-color: $colorHeader;
+
     h1 {
         @include centrar-vertical;
         justify-content: flex-start;
@@ -16,6 +17,7 @@ header {
         font-family: "Merienda One", "cursive";
         color: $colorPrincipal;
     }
+
     #navegacion {
         grid-area: "menu";
         font-size: 1.2em;
@@ -26,7 +28,6 @@ header {
             padding: 0%;
             margin: 0%;
             text-align: right;
-
             li {
                 @include layout(auto, 100%);
                 @include centrar-vertical;

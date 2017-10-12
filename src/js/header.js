@@ -1,4 +1,4 @@
-function logear(evento) {
+function login(evento) {
     evento.preventDefault();
     var divlog = document.getElementById("login");
     if (divlog.style.display == "none" || divlog.style.display == "") {
@@ -9,7 +9,7 @@ function logear(evento) {
 }
 
 window.onload = function () {
-    document.getElementById("boton_entrar").addEventListener("click", logear, false);
+    document.getElementById("boton_entrar").addEventListener("click", login, false);
     document.onselectstart = function () {
         return false;
     }
