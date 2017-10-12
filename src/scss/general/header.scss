@@ -1,11 +1,9 @@
 @import "colores";
 @import "mixin";
 
-$colorHeader: rgba(44, 44, 44, 0.9);
-
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 30vw [col2] 70vw [col3]");
+    grid-template-columns: unquote("[col1] 25vw [col2] 75vw [col3]");
     grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
     background-color: $colorHeader;
@@ -22,22 +20,29 @@ header {
         grid-area: "menu";
         font-size: 1.2em;
         font-family: 'Roboto', sans-serif;
-
+        margin-right: 1%;
         ul {
             @include layout(100%, 100%);
-            @include centrar-vertical;
             padding: 0%;
             margin: 0%;
-            justify-content: none;
+            text-align: right;
+
             li {
+                @include layout(auto, 100%);
+                @include centrar-vertical;
                 color: whitesmoke;
-                text-shadow: 1px 1px 3px black;
-                margin-left: 4%;
+                padding: 0% 1%;
+                /*text-shadow: 1px 1px 3px black;*/
                 font-weight: 600;
                 list-style-type: none;
-                a{
-
+                a {
+                    color: whitesmoke;
+                    text-decoration: none;
                 }
+            }
+            :hover {
+                cursor: pointer;
+                background-color: lighten($colorHeader, 15%);
             }
         }
     }
