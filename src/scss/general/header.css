@@ -1,0 +1,53 @@
+/* line 4, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+header {
+  display: grid;
+  grid-template-columns: [col1] 25vw [col2] 75vw [col3];
+  grid-template-rows: [row1] 4.5em [row2];
+  grid-template-areas: "logo  menu";
+  background-color: rgba(44, 44, 44, 0.9); }
+  /* line 11, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+  header h1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 2%;
+    grid-area: "logo";
+    font-size: 1.8em;
+    font-family: "Merienda One", "cursive";
+    color: #FF5700; }
+  /* line 21, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+  header #navegacion {
+    grid-area: "menu";
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1%; }
+    /* line 26, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+    header #navegacion ul {
+      width: 100%;
+      height: 100%;
+      padding: 0%;
+      margin: 0%;
+      text-align: right; }
+      /* line 31, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+      header #navegacion ul li {
+        width: auto;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        padding: 0% 1%;
+        /*text-shadow: 1px 1px 3px black;*/
+        font-weight: 600;
+        list-style-type: none; }
+        /* line 39, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+        header #navegacion ul li a {
+          color: whitesmoke;
+          text-decoration: none; }
+      /* line 44, C:/Users/lliurex/Dropbox/Clase DAW2/Diseno de interfaces/Cafeteria/src/scss/general/header.scss */
+      header #navegacion ul :hover {
+        cursor: pointer;
+        background-color: rgba(82, 82, 82, 0.9); }
+
+/*# sourceMappingURL=header.css.map */
