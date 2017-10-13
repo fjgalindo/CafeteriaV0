@@ -1,17 +1,39 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../stylesheets/index.css" />
-    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../jquery-3.2.1.min.js"></script>
     <script>
         $(function() {
             $("#cabecera").load("header.html");
         });
+
     </script>
 </head>
-    <body>
-        <div id="cabecera"></div>
-    </body>
+
+<body>
+    <div id="cabecera"></div>
+    <main id="sugerencias ">
+        <form>
+            <select name="opciones">
+                <option></option>
+               <option value="1">Sugerencia</option>
+               <option value="2">Queja</option>
+               <option value="3">Felicitación</option>
+
+            </select><br>
+
+            <label for="nombre">Nombre</label>
+            <imput type="text" id="nombre"></imput>
+        </form>
+    </main>
+
+
+
+
+</body>
+
 </html>
