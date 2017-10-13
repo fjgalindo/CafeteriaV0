@@ -16,6 +16,7 @@
 
 body {
     margin: 0%;
+    font-family: sans-serif;
     background-image: url(../img/promo/foto.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -23,18 +24,15 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 #contenido {
-    @include layout(100%,
-    100%);
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
+    @include layout(100%, 100%);
+    text-align: center;
     color: white;
+    main{
+        margin-top: 1.5%;
+    }
 }
 
 #sobre_nosotros {
@@ -47,10 +45,18 @@ body {
     grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
     padding: 1%;
     border-radius: 0.5%;
-    grid-gap: 1%;
+    margin: auto;
+    color: #e8e8e8;
     div {
-        @include layout(90%, auto);
-        background-color: rgba(255, 255, 255, 0.6);
+        @include layout(auto, auto);
+        margin: 0.5em;
+        h2 {
+            font-size: 180%;
+            font-family: sans-serif;
+        }
+        p {
+            margin: 1em;
+        }
     }
 }
 
