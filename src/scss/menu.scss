@@ -1,15 +1,69 @@
+#menu{
 
-#menu {
-    display:grid;
-    grid-template-columns:[col1] 25vw [col2] 75vw [col3];
-    grid-template-rows: [row1] 75vh [row2] ;
+    background-color: rgba(255, 255, 255, 0.38);
+    border: $colorHeader 2px solid;
+    width: 95vw;
+    height:80vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    border-radius:20px;
 
 
-    #navMenu{
-        border: black 2px solid;
-        background-color: $bannerFondo;
-        grid-column-start: col1;
-        grid-column-end: col2;
+
+#navMenu{
+    position: absolute;
+    top:35vh;
+    left: 4vw;
+    width: 15vw;
+
+    font-weight: bold;
+
+        li{
+            font-family: 'Roboto', sans-serif;
+            background-color: lighten($colorPrincipal, 5%);
+            font-size: 1.8vw;
+            padding: 5%;
+            text-align: center;
+            border: $colorHeader 2px solid;
+            margin-bottom: 2%;
+
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($colorHeader, 15%);
+                color: white;
+            }
+
+
+        }
+
+
     }
+
+
+    #bocadillos{
+        border: $colorHeader 2px solid;
+        margin-top: 2%;
+        margin-left: 22%;
+        margin-right: 1%;
+        height: 90%;
+        border-radius:20px;
+
+
+    }
+
+    #bebidas{
+
+    }
+
+    #cafes{
+
+    }
+
+    #snacks{
+
+    }
+
+
+
 
 }
