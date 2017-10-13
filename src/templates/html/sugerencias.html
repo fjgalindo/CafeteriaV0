@@ -16,24 +16,31 @@
 
 <body>
     <div id="cabecera"></div>
-    <main id="sugerencias ">
-        <form>
-            <select name="opciones">
-                <option></option>
-               <option value="1">Sugerencia</option>
-               <option value="2">Queja</option>
-               <option value="3">Felicitación</option>
 
-            </select><br>
+    <div id="sugeren">
+        <h2>Buzon de sugerencias</h2>
 
-            <label for="nombre">Nombre</label>
-             <input type="text" id="nombre"><br>
-            <label for="com">Comentarios:</label><br>
-           <textarea id="com"></textarea><br>
-            <input type="button" id="enviar" value="Enviar">
+       <div class="container">
+  <form >
 
-        </form>
-    </main>
+
+    <label for="lemail">Email del instituto</label>
+    <input type="email" id="lemail" name="email" placeholder="Tu email">
+
+    <label for="opcion">Opciones</label>
+    <select id="opcion" name="opcion">
+      <option value="Felicitacion">Felicitación</option>
+      <option value="Sugerencia">Sugerencia</option>
+      <option value="Queja">Queja</option>
+    </select>
+
+    <label for="area">Comentario</label>
+    <textarea id="area" name="area" placeholder="Ayudanos a seguir mejorando"></textarea>
+
+    <input type="submit" id="btenviar"value="enviar">
+  </form>
+</div>
+    </div>
 
 
 
