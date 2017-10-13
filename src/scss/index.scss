@@ -13,6 +13,7 @@
 // Fuentes
 @import url('https://fonts.googleapis.com/css?family=Merienda+One');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 
 body {
@@ -51,12 +52,15 @@ body {
     div {
         @include layout(auto, auto);
         margin: 0.5em;
+
         h2 {
             font-size: 180%;
             font-family: sans-serif;
         }
         p {
             margin: 1em;
+        }
+        iframe{
         }
     }
 }
