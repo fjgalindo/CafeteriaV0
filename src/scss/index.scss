@@ -23,28 +23,34 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 #contenido {
     @include layout(100%,
-    90%);
+    100%);
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
+    align-content: space-around;
     justify-content: center;
     color: white;
 }
 
 #sobre_nosotros {
     background-color: $bannerFondo;
-    @include layout(85%,
-    85%);
+    border-top: 4px $colorPrincipal solid;
+    @include layout(90%, auto);
     text-align: justify;
     display: grid;
     grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
     grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
+    padding: 1%;
+    border-radius: 0.5%;
+    grid-gap: 1%;
     div {
-        @include layout(95%, 95%);
-        margin: 2%;
+        @include layout(90%, auto);
+        background-color: rgba(255, 255, 255, 0.6);
     }
 }
 
