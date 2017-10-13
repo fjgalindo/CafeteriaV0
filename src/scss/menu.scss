@@ -1,9 +1,8 @@
-@import "./general/colores";
 
 #menu {
     display:grid;
     grid-template-columns:[col1] 25vw [col2] 75vw [col3];
-    grid-template-rows: [row1] 25vh [row2] ;.001
+    grid-template-rows: [row1] 75vh [row2] ;
 
 
     #navMenu{
