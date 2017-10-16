@@ -3,16 +3,16 @@
 
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 25vw [col2] 75vw [col3]");
+    grid-template-columns: unquote("[col1] 25vw [col2] 70vw [col3]");
     grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
     background-color: $colorHeader;
 
     h1 {
+        grid-area: "logo";
         @include centrar-vertical;
         justify-content: flex-start;
         margin-left: 2%;
-        grid-area: "logo";
         font-size: 1.8em;
         font-family: "Merienda One", "cursive";
         color: $colorPrincipal;

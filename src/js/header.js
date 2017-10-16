@@ -3,6 +3,7 @@ function login(evento) {
     var divlog = document.getElementById("login");
     if (divlog.style.display == "none" || divlog.style.display == "") {
         divlog.style.display = "block";
+
     } else {
         divlog.style.display = "none";
     }
