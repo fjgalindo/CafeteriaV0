@@ -1,6 +1,52 @@
-#sugerencias{
-    height:7vh ;
-    width:80vw ;
-    background-color: azure;
+#cabecera{
+    margin-bottom: 3vw;
 }
+#sugeren{
+   background-color: rgba(255, 255, 255, 0.38);
+    width: 70vw;
+    height:auto;
+    padding: 3%;
+    top: 300px;
+    margin: auto;
+    border-radius:20px;
+    font-weight: bold;
+    h2{
+        text-align: center;
+        font-size: 300%;
+        margin-bottom: 16px;
+    }
+    input[type=email], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+
+    }
+    #area{
+        height: 200px;
+    }
+
+        #btenviar {
+        background-color: lighten($colorPrincipal, 5%);
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 240px;
+             &:hover {
+                cursor: pointer;
+                background-color: lighten($colorHeader, 15%);
+                color: white;
+            }
+    }
+
+
+}
+
 
