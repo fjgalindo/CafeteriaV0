@@ -12,3 +12,23 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin prohibir-seleccion {
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@mixin sombrear($ancho, $alto, $radio, $color) {
+    -webkit-box-shadow: $ancho $alto $radio $color;
+    -moz-box-shadow: $ancho $alto $radio $color;
+    box-shadow: $ancho $alto $radio $color;
+}

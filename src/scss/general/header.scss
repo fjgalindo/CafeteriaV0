@@ -16,6 +16,8 @@ header {
         font-size: 1.8em;
         font-family: "Merienda One", "cursive";
         color: $colorPrincipal;
+        @include prohibir-seleccion;
+        cursor: default;
     }
 
     #navegacion {

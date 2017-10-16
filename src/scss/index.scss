@@ -45,19 +45,14 @@ body {
     display: grid;
     grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
     grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
+    -ms-display: grid;
+    -ms-grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
+    -ms-grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
     padding: 1%;
     border-radius: 0.5%;
     margin: auto;
     color: #e8e8e8;
-
-
     z-index:0;
-    -webkit-transform: translateZ( 0 );
-    transform: translateZ( 0 );
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 
     div {
         @include layout(auto, auto);
@@ -66,6 +61,7 @@ body {
         h2 {
             font-size: 180%;
             font-family: sans-serif;
+            color: lighten($colorPrincipal, 10%);
         }
         p {
             margin: 1em;
