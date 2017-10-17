@@ -23,6 +23,7 @@
             background-color: lighten($colorPrincipal, 5%);
             font-size: 1.8vw;
             padding: 5%;
+            list-style-type: none;
             text-align: center;
             border: $colorHeader 2px solid;
             margin-bottom: 2%;
@@ -82,7 +83,7 @@
 
     #titulo_menu {
             @include layout(100%, 8%);
-            border-bottom: $colorPrincipal 8px solid;
+            border-bottom: $colorPrincipal 10px solid;
 
 
             h1 {
@@ -92,10 +93,11 @@
                 font-weight: bold;
                 letter-spacing: 20px;
                 font-family: 'Dancing Script', cursive;
-                border-bottom: $colorHeader 2px solid;
+                //border-bottom: $colorHeader 2px solid;
                 padding-bottom: 1%;
                 padding-top: 1%;
                 background-color: $colorHeader;
+                margin: 0;
                 margin-bottom: 2%;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
