@@ -1,5 +1,26 @@
-BIENVENIDA {SLIDER, SOBRE NOSOTROS} - JAVI https://codepen.io/JyGProyectosWeb/pen/PNBRev
-LOGIN - ALEJANDRO
-MENU {NAVEGACION, MAIN CON OTRO GRID Y SELECCION DE PRODUCTOS, EN LA BARRA ICONO CARRITO}
-FORMULARIO DE SUGERENCIAS - ALEJANDRO
-COMPRAS {PASOS DE REALIZAR UN PEDIDO} 
+
+//////////////////// JAVI \\\\\\\\\\\\\\\\\\\\\\\\
++ BIENVENIDA {SLIDER, SOBRE NOSOTROS} - JAVI
++ CABECERA USUARIO LOGEADO
+
+  https://codepen.io/JyGProyectosWeb/pen/PNBRev
+
+\\\\\\\\\\\\\\\\\\\\\\ ///////////////////////////
+
+
+
+////////////////// ALEJANDRO \\\\\\\\\\\\\\\\\\\\\\
++   LOGIN
++   FORMULARIO DE SUGERENCIAS
+
+\\\\\\\\\\\\\\\\\\\\\\\ ///////////////////////////
+
+
+
+//////////////////// VICENTE \\\\\\\\\\\\\\\\\\\\\\
++ MENU {NAVEGACION, MAIN CON OTRO GRID Y SELECCION DE PRODUCTOS}
+
+\\\\\\\\\\\\\\\\\\\\\\\\ //////////////////////////
+
+
+COMPRAS {PASOS DE REALIZAR UN PEDIDO, CARRITO} 
