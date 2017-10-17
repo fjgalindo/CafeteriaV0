@@ -1,0 +1,62 @@
+/* line 2, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+#menu {
+  background-color: rgba(255, 255, 255, 0.38);
+  border: rgba(44, 44, 44, 0.95) 2px solid;
+  width: 95vw;
+  height: 80vh;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  border-radius: 20px; }
+  /* line 14, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+  #menu #navMenu {
+    position: absolute;
+    top: 35vh;
+    left: 4vw;
+    width: 15vw;
+    font-weight: bold; }
+    /* line 22, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+    #menu #navMenu li {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ff681a;
+      font-size: 1.8vw;
+      padding: 5%;
+      text-align: center;
+      border: rgba(44, 44, 44, 0.95) 2px solid;
+      margin-bottom: 2%; }
+      /* line 31, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+      #menu #navMenu li:hover {
+        cursor: pointer;
+        background-color: rgba(82, 82, 82, 0.95);
+        color: white; }
+  /* line 40, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+  #menu #bocadillos {
+    border: rgba(44, 44, 44, 0.95) 2px solid;
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-right: 1%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: white; }
+    /* line 49, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+    #menu #bocadillos h1 {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 3vw;
+      font-weight: bold;
+      letter-spacing: 20px;
+      font-family: 'Dancing Script', cursive;
+      border-bottom: rgba(44, 44, 44, 0.95) 2px solid;
+      padding-bottom: 2%;
+      padding-top: 2%;
+      background-color: rgba(44, 44, 44, 0.95);
+      margin: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      color: white; }
+  /* line 74, C:/Users/lliurex/disenoInterfaces/cafeteria/src/scss/menu.scss */
+  #menu .elementos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+/*# sourceMappingURL=menu.css.map */
