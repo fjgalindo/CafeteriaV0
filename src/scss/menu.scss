@@ -1,25 +1,25 @@
 @import 'general/colores';
-#menu{
+#menu {
 
     background-color: rgba(255, 255, 255, 0.38);
     border: $colorHeader 2px solid;
     width: 95vw;
-    height:80vh;
+    height: 80vh;
     margin-top: 5vh;
     margin-left: 2vw;
-    border-radius:20px;
+    border-radius: 20px;
 
 
 
-#navMenu{
-    position: absolute;
-    top:35vh;
-    left: 4vw;
-    width: 15vw;
+    #navMenu {
+        position: absolute;
+        top: 35vh;
+        left: 4vw;
+        width: 15vw;
 
-    font-weight: bold;
+        font-weight: bold;
 
-        li{
+        li {
             font-family: 'Roboto', sans-serif;
             background-color: lighten($colorPrincipal, 5%);
             font-size: 1.8vw;
@@ -33,50 +33,49 @@
                 background-color: lighten($colorHeader, 15%);
                 color: white;
             }
-
-
         }
-
-
     }
 
 
-    #bocadillos{
+    #bocadillos {
         border: $colorHeader 2px solid;
         margin-top: 2%;
         margin-left: 22%;
         margin-right: 1%;
         height: 90%;
-        border-radius:20px;
+        border-radius: 20px;
         background-color: rgb(255, 255, 255);
 
-        h1{
+        h1 {
             text-align: center;
-            margin-top: 2%;
             font-family: 'Roboto', sans-serif;
             font-size: 3vw;
             font-weight: bold;
-            letter-spacing: 5px;
+            letter-spacing: 20px;
             font-family: 'Dancing Script', cursive;
-
+            border-bottom: $colorHeader 2px solid;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            background-color: $colorHeader;
+            margin: 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: white;
         }
 
-
     }
 
-    #bebidas{
+    #bebidas {}
 
+    #cafes {}
+
+    #snacks {}
+
+    .elementos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    #cafes{
-
-    }
-
-    #snacks{
-
-    }
-
-
 
 
 }
