@@ -5,12 +5,13 @@
 #login {
     display: none;
     @include layout(20em, 15em);
-    background-color: white;
     position: absolute;
-    right: 5.6%;
-    padding: 2%;
+    right: 0%;
+    padding: 3% 2%;
     z-index: 20;
     background-color: $colorHeader;
+    border-bottom-left-radius: 1%;
+    broder-bottom-right-radius: 1%;
     #icono {
         text-align: center;
         margin: auto;

@@ -3,9 +3,16 @@
 
 header {
     display: grid;
-    grid-template-columns: unquote("[col1] 25vw [col2] 70vw [col3]");
+    grid-template-columns: unquote("[col1] 30vw [col2] 68vw [col3]");
     grid-template-rows: unquote("[row1] 4.5em [row2]");
     grid-template-areas: "logo  menu";
+
+    /* ===== EDGE COMPATIBILITY ===== */
+    -ms-display: grid;
+    -ms-grid-template-columns: unquote("[col1] 25vw [col2] 70vw [col3]");
+    -ms-grid-template-rows: unquote("[row1] 4.5em [row2]");
+    -ms-grid-template-areas: "logo  menu";
+
     background-color: $colorHeader;
 
     h1 {
@@ -32,13 +39,14 @@ header {
             text-align: right;
             li {
                 @include layout(auto, 100%);
+                display: block;
                 @include centrar-vertical;
                 color: whitesmoke;
-                padding: 0% 1%;
                 /*text-shadow: 1px 1px 3px black;*/
                 font-weight: 600;
                 list-style-type: none;
                 a {
+                    padding: 25px 0.5em;
                     color: whitesmoke;
                     text-decoration: none;
                 }
