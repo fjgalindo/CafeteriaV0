@@ -84,7 +84,8 @@
 
     #titulo_menu {
             @include layout(100%, 8%);
-            border-bottom: $colorPrincipal 5px solid;
+            border-bottom: $colorPrincipal 8px solid;
+
 
             h1 {
                 text-align: center;
@@ -113,6 +114,7 @@
 
             .producto {
                 width: 25%;
+                height: 40%;
                 border: $colorHeader 2px solid;
                 border-radius: 5px;
                 background-color: white;
