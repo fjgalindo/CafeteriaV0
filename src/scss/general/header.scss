@@ -64,13 +64,14 @@ header {
                     height: 300px;
                 }
             }*/
-            :hover {
-                cursor: pointer;
-                background-color: lighten($colorHeader, 15%);
+                :hover {
+                    cursor: pointer;
+                    background-color: lighten($colorHeader, 15%);
 
-            }
-            :active {
-                text-shadow: 0px 0px 4px $colorPrincipal;
+                }
+                :active {
+                    text-shadow: 0px 0px 4px $colorPrincipal;
+                }
             }
         }
     }
