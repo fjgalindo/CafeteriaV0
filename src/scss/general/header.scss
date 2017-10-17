@@ -14,7 +14,7 @@ header {
     -ms-grid-template-areas: "logo  menu";
 
     background-color: $colorHeader;
-
+    @include prohibir-seleccion;
     h1 {
         grid-area: "logo";
         @include centrar-vertical;
@@ -23,7 +23,6 @@ header {
         font-size: 1.8em;
         font-family: "Merienda One", "cursive";
         color: $colorPrincipal;
-        @include prohibir-seleccion;
         cursor: default;
     }
 
