@@ -60,6 +60,28 @@
         display: none;
     }
 
+    #cafes {
+        border: $colorHeader 2px solid;
+        margin-top: 2%;
+        margin-left: 22%;
+        margin-right: 1%;
+        height: 90%;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+
+    #snacks {
+        border: $colorHeader 2px solid;
+        margin-top: 2%;
+        margin-left: 22%;
+        margin-right: 1%;
+        height: 90%;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+
     #titulo_menu {
             @include layout(100%, 8%);
             border-bottom: $colorPrincipal 5px solid;
@@ -109,6 +131,7 @@
                 p {
                     font-weight: bold;
                     font-size: 120%;
+                    margin-bottom: 0%;
                 }
             }
         }
