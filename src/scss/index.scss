@@ -31,18 +31,34 @@ body {
 }
 
 #contenido {
-    @include layout(100%, 100%);
+    @include layout(100%,
+    100%);
     text-align: center;
     color: white;
-    main{
+    main {
         margin-top: 1.5%;
     }
+    /*
+    #slider {
+        z-index: -20;
+        #slider_imagenes {
+            .slider_card {
+                list-style-type: none;
+                img{
+                    width: 100%
+                }
+            }
+        }
+    }*/
 }
+
+
 
 #sobre_nosotros {
     background-color: $fondoBanner;
     border-top: 4px $colorPrincipal solid;
-    @include layout(90%, auto);
+    @include layout(90%,
+    auto);
     text-align: justify;
     display: grid;
     grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
@@ -54,10 +70,11 @@ body {
     border-radius: 0.5%;
     margin: auto;
     color: #e8e8e8;
-    z-index:0;
+    z-index: 0;
 
     div {
-        @include layout(auto, auto);
+        @include layout(auto,
+        auto);
         margin: 0.5em;
 
         h2 {
@@ -68,11 +85,12 @@ body {
         p {
             margin: 1em;
         }
-        #location{
+        #location {
             text-align: center;
-            iframe{
+            iframe {
                 box-shadow: 2px 2px 10px #585858;
-                @include layout(70%, 60%);
+                @include layout(70%,
+                60%);
             }
         }
     }

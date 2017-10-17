@@ -36,6 +36,10 @@
             padding: 1%;
             color: $colorTexto;
 
+
+        }
+        :focus {
+            background-color: lighten($colorHeader, 50%)
         }
         ::-webkit-input-placeholder {
             color: #1d1d1d;
@@ -67,7 +71,8 @@
             font-size: 100%;
             color: $colorPrincipal;
         }
-        #entrar, a {
+        #entrar,
+        a {
             @include prohibir-seleccion;
         }
     }
