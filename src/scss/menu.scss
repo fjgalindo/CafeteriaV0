@@ -18,7 +18,6 @@
         top: 35vh;
         left: 4vw;
         width: 15vw;
-
         font-weight: bold;
 
         li {
@@ -49,13 +48,13 @@
         background-color: rgb(255, 255, 255);
         display: block;
 
-        #tiutlo_menu {
-            @include layout(auto, 7%);
+        #titulo_menu {
+            @include layout(100%, 8%);
 
             h1 {
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
-                font-size: 2vw;
+                font-size: 3vw;
                 font-weight: bold;
                 letter-spacing: 20px;
                 font-family: 'Dancing Script', cursive;
@@ -68,37 +67,31 @@
                 border-top-right-radius: 15px;
                 color: white;
             }
-
         }
+    }
 
-        #bebidas {}
-
-        #cafes {}
-
-        #snacks {}
-
-        .elementos {
+    .elementos {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             overflow-y: scroll;
-
             @include layout(100%, 90%);
+
             .producto {
+                width: 25%;
                 border: #18164a 2px solid;
                 border-radius: 5px;
                 background-color: white;
                 text-align: center;
                 padding: 0;
                 padding-bottom: 1%;
-                margin-top: 2%;
-
+                margin-top: 5%;
+                margin-bottom: 2%;
 
                 img {
                     width: 100%;
                     height: auto;
                     margin: 0;
-
                 }
 
                 p {
@@ -106,9 +99,5 @@
                     font-size: 120%;
                 }
             }
-
         }
-
-
-    }
 }
