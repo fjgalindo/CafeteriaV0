@@ -67,6 +67,8 @@
             font-size: 100%;
             color: $colorPrincipal;
         }
-
+        #entrar, a {
+            @include prohibir-seleccion;
+        }
     }
 }
