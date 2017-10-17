@@ -3,9 +3,9 @@
 
     background-color: rgba(255, 255, 255, 0.38);
     border: $colorHeader 2px solid;
+    margin-top: -2%;
     width: 95vw;
-    height: 85vh;
-    margin-top: 3vh;
+    height: 87vh;
     margin-left: 2vw;
     border-radius: 20px;
 
@@ -45,54 +45,68 @@
         height: 90%;
         border-radius: 20px;
         background-color: rgb(255, 255, 255);
+        display: block;
 
-        h1 {
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 3vw;
-            font-weight: bold;
-            letter-spacing: 20px;
-            font-family: 'Dancing Script', cursive;
-            border-bottom: $colorHeader 2px solid;
-            padding-bottom: 1%;
-            padding-top: 1%;
-            background-color: $colorHeader;
-            margin: 0;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            color: white;
-        }
+        #tiutlo_menu {
+            @include layout(auto, 7%);
 
-    }
-
-    #bebidas {}
-
-    #cafes {}
-
-    #snacks {}
-
-    .elementos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .producto{
-            border: #18164a 2px solid;
-            margin-left: 2%;
-            margin-right: 2%;
-            margin-top: 2%;
-            width: 20%;
-            height: 25%;
-            padding: 1%;
-            border-radius: 5px;
-            background-color: white;
-
-            img{
-                width: 100%;
+            h1 {
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 2vw;
+                font-weight: bold;
+                letter-spacing: 20px;
+                font-family: 'Dancing Script', cursive;
+                border-bottom: $colorHeader 2px solid;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                background-color: $colorHeader;
+                margin-bottom: 2%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                color: white;
             }
+
         }
 
+        #bebidas {}
+
+        #cafes {}
+
+        #snacks {}
+
+        .elementos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            overflow-y: scroll;
+
+            @include layout(100%, 90%);
+            .producto {
+                border: #18164a 2px solid;
+                border-radius: 5px;
+                background-color: white;
+                text-align: center;
+                padding: 0;
+                padding-bottom: 1%;
+                margin-top: 2%;
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+
+                }
+
+                p {
+                    font-weight: bold;
+                    font-size: 120%;
+                }
+            }
+
+        }
+
+
     }
-
-
 }
