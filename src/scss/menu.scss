@@ -47,9 +47,22 @@
         border-radius: 20px;
         background-color: rgb(255, 255, 255);
         display: block;
+    }
 
-        #titulo_menu {
+    #bebidas {
+        border: $colorHeader 2px solid;
+        margin-top: 2%;
+        margin-left: 22%;
+        margin-right: 1%;
+        height: 90%;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+
+    #titulo_menu {
             @include layout(100%, 8%);
+            border-bottom: $colorPrincipal 5px solid;
 
             h1 {
                 text-align: center;
@@ -68,18 +81,17 @@
                 color: white;
             }
         }
-    }
 
     .elementos {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             overflow-y: scroll;
-            @include layout(100%, 90%);
+            @include layout(100%, 88%);
 
             .producto {
                 width: 25%;
-                border: #18164a 2px solid;
+                border: $colorHeader 2px solid;
                 border-radius: 5px;
                 background-color: white;
                 text-align: center;
