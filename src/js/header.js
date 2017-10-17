@@ -11,5 +11,7 @@ function login(evento) {
 
 window.onload = function () {
     document.getElementById("boton_entrar").addEventListener("click", login, false);
-
+    document.onselectstart = function () {
+        return false;
+    }
 }
