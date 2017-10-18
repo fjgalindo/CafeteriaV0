@@ -1,3 +1,21 @@
+window.onload=function(){
+
+    // evento para cambio al menú de los bocadillos
+    document.getElementById("link_bocadillos").addEventListener("click",cambioBocadillos,false);
+
+    // evento para cambio al menú de las bebidas
+    document.getElementById("link_bebidas").addEventListener("click",cambioBebidas,false);
+
+    // evento para cambio al menú de los cafés
+    document.getElementById("link_cafes").addEventListener("click",cambioCafes,false);
+
+    // evento para cambio al menú de los snakcs
+    document.getElementById("link_snacks").addEventListener("click",cambioSnacks,false);
+
+
+}
+
+
 // Función que muestra el menú de los bocadillos
 function cambioBocadillos(){
 
