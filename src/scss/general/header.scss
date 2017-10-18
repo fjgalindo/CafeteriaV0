@@ -2,6 +2,7 @@
 @import "colores";
 
 header {
+    z-index: 10;
     display: grid;
     grid-template-columns: unquote("[col1] 30vw [col2] 68vw [col3]");
     grid-template-rows: unquote("[row1] 4.5em [row2]");
@@ -15,6 +16,8 @@ header {
 
     background-color: $colorHeader;
     @include prohibir-seleccion;
+
+    border-bottom: 1px darken($colorHeader, 1%) solid;
     h1 {
         grid-area: "logo";
         @include centrar-vertical;

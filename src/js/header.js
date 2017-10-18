@@ -7,17 +7,21 @@ function loadEvents() {
 
     document.getElementById("entrar").addEventListener("click", entrar, false);
 
-    // evento para cambio al menú de los bocadillos
-    document.getElementById("link_bocadillos").addEventListener("click",cambioBocadillos,false);
+    document.getElementById("link_sobre_nosotros").addEventListener("click", function (evento) {
+        evento.preventDefault();
+        var sobre_nosotros = document.getElementById("sobre_nosotros");
+        //var body = document.getElementsByTagName("body");
+        if (sobre_nosotros.style.display == "none"|| sobre_nosotros.style.display == "") {
+            sobre_nosotros.style.display = "grid";
+            sobre_nosotros.style.animation = "skyfall 0.5s 1 linear";
 
-    // evento para cambio al menú de las bebidas
-    document.getElementById("link_bebidas").addEventListener("click",cambioBebidas,false);
-
-    // evento para cambio al menú de los cafés
-    document.getElementById("link_cafes").addEventListener("click",cambioCafes,false);
-
-    // evento para cambio al menú de los snakcs
-    document.getElementById("link_snacks").addEventListener("click",cambioSnacks,false);
+            //body.style.animation = "slider 20s infinite alternate linear running";
+        } else {
+            //sobre_nosotros.style.animation = "skyrise 0.5s 1 linear";
+            sobre_nosotros.style.display = "none";
+            //body.style.animation = "slider 20s infinite alternate linear paused";
+        }
+    }, false);
 
 }
 

@@ -23,10 +23,13 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-    -ms-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    -webkit-animation: slider 20s infinite alternate linear;
+    -moz-animation: slider 20s infinite alternate linear;
+    -o-animation: slider 20s infinite alternate linear;
     animation: slider 20s infinite alternate linear;
 
 }
@@ -48,11 +51,39 @@ body {
 
     50% {
         background-image: url(../img/promo/bocadillo.jpg);
-
     }
     70% {
         background-image: url(../img/promo/bocadillo.jpg);
+    }
 
+    75% {
+        background-image: url(../img/promo/sandwiches.jpg);
+    }
+    100% {
+        background-image: url(../img/promo/sandwiches.jpg);
+    }
+}
+
+@-moz-keyframes slider {
+    0% {
+        background-image: url(../img/promo/foto.jpg);
+    }
+    20% {
+        background-image: url(../img/promo/foto.jpg);
+    }
+
+    25% {
+        background-image: url(../img/promo/desayunos.jpg);
+    }
+    45% {
+        background-image: url(../img/promo/desayunos.jpg);
+    }
+
+    50% {
+        background-image: url(../img/promo/bocadillo.jpg);
+    }
+    70% {
+        background-image: url(../img/promo/bocadillo.jpg);
     }
 
     75% {
@@ -95,14 +126,20 @@ body {
     @include layout(90%,
     auto);
     text-align: justify;
-    display: grid;
-    grid-template-rows: unquote("[row0] 30% [row1] 70% [row2]");
+    display: none;
+    grid-template-rows: unquote("[row0] 20% [row1] 80% [row2]");
     grid-template-columns: unquote("[col0] 50% [col1] 50% [col2]");
     padding: 1%;
     border-radius: 0.5%;
     margin: auto;
     color: #e8e8e8;
-    z-index: 0;
+    z-index: 5;
+    /*
+    -webkit-animation: skyfall 1s 1 linear;
+    -moz-animation: skyfall 1s 1 linear;
+    -o-animation: skyfall 1s 1 linear;
+    animation: skyfall 1s 1 linear;
+    */
 
     div {
         @include layout(auto,
@@ -128,6 +165,24 @@ body {
     }
 }
 
+@keyframes skyfall {
+    0% {
+        margin-top: -1%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+/*
+@keyframes skyrise {
+    0% {
+        margin-top: 0%;
+    }
+    100% {
+        margin-top: -1%;
+    }
+}
+*/
 /*
 @media (){
     header {
