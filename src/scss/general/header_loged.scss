@@ -1,7 +1,30 @@
 @import "mixin";
 @import "colores";
 
+
+$user_info_background: darken($colorHeader, 2%);
+
+header {
+    grid-template-columns: unquote("[col1] 30vw [col2] 70vw [col3]");
+
+    #navegacion {
+        margin-right: 0%;
+    }
+}
+
 #user_info {
+    padding: 0% 1%;
+    background-color: $user_info_background;
+    #head_username {
+        label {
+
+        }
+        background-color: $user_info_background;
+    }
+    #head_userimg {
+        @include layout(100%, 100%);
+        background-color: red;
 
 
+    }
 }
