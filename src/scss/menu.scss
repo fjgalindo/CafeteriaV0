@@ -133,7 +133,6 @@
             .foto_producto {
                 height: 70%;
                 width: auto;
-                margin-bottom: 5%;
 
                 img {
                     width: 100%;
@@ -144,13 +143,17 @@
             }
 
             .info_producto {
-                height: 40%;
+                height: 30%;
                 width: auto;
+                //padding-top: 7%;
+                background-color: lighten($colorPrincipal, 5%);
 
                 p {
                     font-weight: bold;
                     font-size: 120%;
-                    margin: 2%;
+                    margin: 0%;
+                    padding: 0%;
+                    padding-top: 3%;
                 }
 
             }
