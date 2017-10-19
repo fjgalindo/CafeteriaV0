@@ -130,6 +130,14 @@
 
             .ingredientes{
                 display:none;
+                background-color: lighten($colorPrincipal, 30%);
+                width: auto;
+                height: 70%;
+
+                p{
+                    margin: 0;
+                    padding-top:10%;
+                }
             }
         }
     }
