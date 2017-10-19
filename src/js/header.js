@@ -13,7 +13,6 @@ function loadEvents() {
         //var body = document.getElementsByTagName("body");
         if (sobre_nosotros.style.display == "none" || sobre_nosotros.style.display == "") {
             sobre_nosotros.style.display = "grid";
-            sobre_nosotros.style.animation = "skyfall 0.5s 1 linear";
 
             //body.style.animation = "slider 20s infinite alternate linear running";
         } else {

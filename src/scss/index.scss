@@ -28,10 +28,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 
-    -webkit-animation: slider 20s infinite alternate linear;
-    -moz-animation: slider 20s infinite alternate linear;
-    -o-animation: slider 20s infinite alternate linear;
-    animation: slider 20s infinite alternate linear;
+    animation: slider 30s infinite alternate linear;
 
 }
 
@@ -135,12 +132,11 @@ body {
     margin: auto;
     color: #e8e8e8;
     z-index: 5;
-    /*
-    -webkit-animation: skyfall 1s 1 linear;
-    -moz-animation: skyfall 1s 1 linear;
-    -o-animation: skyfall 1s 1 linear;
-    animation: skyfall 1s 1 linear;
-    */
+    
+    -webkit-animation: skyfall 0.2s 1 linear;
+    -moz-animation: skyfall 0.2s 1 linear;
+    -o-animation: skyfall 0.2s 1 linear;
+    animation: skyfall 0.2s 1 linear;
 
     div {
         @include layout(auto,

@@ -116,7 +116,7 @@
 
             .info_producto {
                 @include layout(auto, 30%);
-                background-color: lighten($colorPrincipal, 5%);
+                background-color: lighten($colorPrincipal, 8%);
                 display: block;
 
                 p {

@@ -1,38 +1,48 @@
 @import "general/colores";
+@import "general/mixin";
 
-#cabecera{
+#cabecera {
     margin-bottom: 3vw;
 }
-#sugeren{
-   background-color: rgba(255, 255, 255, 0.38);
-    width: 70vw;
-    height:auto;
-    padding: 3%;
-    top: 300px;
+
+#sugeren {
+    background-color: $colorHeader;
+    @include layout(70vw, auto);
+    padding: 2%;
     margin: auto;
-    border-radius:20px;
+    border-radius: 20px;
     font-weight: bold;
-    h2{
+    h2 {
+        margin: 1%;
+        color: $colorPrincipal;
         text-align: center;
-        font-size: 300%;
+        font-size: 2.4em;
         margin-bottom: 16px;
     }
-    input[type=email], select, textarea{
+
+    label {
+        font-size: 1em;
+        color: $colorTexto;
+    }
+
+    input[type=email],
+    select,
+    textarea {
         width: 100%;
-        padding: 12px;
+        padding: 1%;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 16px;
-        resize: vertical;
-
+        resize: none;
     }
-    #area{
+
+    #area {
         height: 200px;
     }
 
-        #btenviar {
+    #btenviar {
         background-color: lighten($colorPrincipal, 5%);
         font-family: 'Roboto', sans-serif;
         color: white;
@@ -41,14 +51,12 @@
         border-radius: 4px;
         cursor: pointer;
         width: 240px;
-             &:hover {
-                cursor: pointer;
-                background-color: lighten($colorHeader, 15%);
-                color: white;
-            }
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($colorHeader, 15%);
+            color: white;
+        }
     }
 
 
 }
-
-
