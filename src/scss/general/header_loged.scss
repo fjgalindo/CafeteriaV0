@@ -13,18 +13,26 @@ header {
 }
 
 #user_info {
-    padding: 0% 1%;
+    padding: auto;
     background-color: $user_info_background;
-    #head_username {
-        label {
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            padding: 0% 5%;
+
+            #head_username {
+                label {}
+
+            }
+            #head_userimg {
+                @include layout(auto, 40%);
+            }
+            #head_cart {
+                @include layout(auto, 30%);
+            }
+
 
         }
-        background-color: $user_info_background;
-    }
-    #head_userimg {
-        @include layout(100%, 100%);
-        background-color: red;
 
-
-    }
-}
+    }}
