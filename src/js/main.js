@@ -13,6 +13,8 @@ window.onload=function(){
     document.getElementById("link_snacks").addEventListener("click",cambioSnacks,false);
 
 
+    document.getElementById("producto0").addEventListener("mouseover",mostrarIngredientes,false);
+
 }
 
 
@@ -80,4 +82,18 @@ function cambioSnacks(){
     divSnacks.style.display="block";
 }
 
+
+function mostrarIngredientes(){
+
+
+    var producto= document.getElementById("producto0");
+
+    producto.style.width="20%";
+    producto.style.height="50%";
+    producto.style.padding="5%";
+
+    var ingrediente= document.getElementById("ingrediente0");
+    ingrediente.style.display="block";
+
+}
 
