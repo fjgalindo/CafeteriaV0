@@ -15,6 +15,8 @@ window.onload=function(){
 
     document.getElementById("producto0").addEventListener("mouseover",mostrarIngredientes,false);
 
+    document.getElementById("producto0").addEventListener("mouseout",ocultarIngredientes,false);
+
 
 }
 
@@ -99,5 +101,18 @@ function mostrarIngredientes(){
 
 }
 
+function ocultarIngredientes(){
 
+
+    var producto= document.getElementById("producto0");
+
+    producto.style.width="20%";
+    producto.style.height="40%";
+   // producto.style.padding="5%";
+
+    var ingrediente= document.getElementById("ingrediente0");
+    ingrediente.style.display="none";
+    //ingrediente.style.border="black 2px solid";
+
+}
 
