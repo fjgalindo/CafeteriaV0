@@ -11,9 +11,13 @@ header {
 }
 
 #user_info {
-    background-color: $user_info_background;
+    //background-color: $user_info_background;
     @include layout(auto, 100%);
+    width: auto;
+    list-style: none;
+    display: inline-block;
     ul {
+
         li {
             padding: 0% 0.5em;
             @include layout(auto, 100%);
@@ -22,6 +26,8 @@ header {
             /*text-shadow: 1px 1px 3px black;*/
             font-weight: 600;
             list-style-type: none;
+            padding: 0;
+            margin-left: 15px;
             #head_username {
                 label {}
 
@@ -30,14 +36,14 @@ header {
                 @include layout(auto, 40%);
             }
             #head_cart {
-                @include layout(auto, 30%);
+                @include layout(auto, 50%);
             }
 
 
         }
-        :hover {
+        li:hover {
             cursor: pointer;
-            background-color: $user_info_background;
+                    background-color: lighten($colorHeader, 15%);
         }
         :active {
             text-shadow: none;

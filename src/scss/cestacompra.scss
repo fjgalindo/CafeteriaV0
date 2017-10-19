@@ -1,0 +1,45 @@
+@import 'general/mixin';
+@import 'general/colores';
+@charset 'UTF-8';
+
+#tienda{
+    margin: 0;
+    padding: 7px;
+    border:3px solid black;
+    float: right;
+    width: 400px;
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-rows: 60px auto 60px ;
+    grid-template-areas:
+        "cesta"
+        "contenido"
+        "pie ";
+    p{
+        display: inline-block;
+        margin-top: -3%;
+       margin: auto;
+    }
+    h2{
+        margin: 0;
+    }
+    hr{
+        display: block;
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+        margin: 0;
+        border-style: inset;
+        border-width: 2px;
+    }
+
+    #cesta{
+    grid-area: "cesta";
+    }
+    #pie{
+        grid-area: "pie";
+    }
+    #contenido{
+        grid-area: "contenido";
+    }
+
+}
