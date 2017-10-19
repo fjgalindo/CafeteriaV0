@@ -7,21 +7,21 @@ $user_info_background: darken($colorHeader, 2%);
 header {
     grid-template-columns: unquote("[col1] 30vw [col2] 70vw [col3]");
 
-    #navegacion {
-        margin-right: 0%;
-
-    }
+    #navegacion {}
 }
 
 #user_info {
     background-color: $user_info_background;
     @include layout(auto, 100%);
     ul {
-        list-style: none;
-        margin: 0%;
-        display: flex;
-        align-items: center;
         li {
+            padding: 0% 0.5em;
+            @include layout(auto, 100%);
+            @include centrar-vertical;
+            color: whitesmoke;
+            /*text-shadow: 1px 1px 3px black;*/
+            font-weight: 600;
+            list-style-type: none;
             #head_username {
                 label {}
 
@@ -35,5 +35,12 @@ header {
 
 
         }
-
-    }}
+        :hover {
+            cursor: pointer;
+            background-color: $user_info_background;
+        }
+        :active {
+            text-shadow: none;
+        }
+    }
+}

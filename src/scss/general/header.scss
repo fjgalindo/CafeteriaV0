@@ -1,5 +1,6 @@
 @import "mixin";
 @import "colores";
+@import "./header_loged";
 
 header {
     z-index: 10;
@@ -35,13 +36,12 @@ header {
         font-family: 'Roboto', sans-serif;
         margin-right: 1%;
         ul {
-            @include layout(100%, 100%);
+            @include layout(auto, 100%);
             padding: 0%;
             margin: 0%;
             text-align: right;
-            li {
+            li:not(#user_info) {
                 @include layout(auto, 100%);
-                display: block;
                 @include centrar-vertical;
                 color: whitesmoke;
                 /*text-shadow: 1px 1px 3px black;*/
