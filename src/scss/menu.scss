@@ -116,7 +116,11 @@
 
             .info_producto {
                 @include layout(auto, 30%);
+<<<<<<< HEAD
                 background-color: lighten($colorPrincipal, 8%);
+=======
+                background-color: lighten($colorPrincipal, 15%);
+>>>>>>> 2617af8bda7835c56ec0c02006c761cf880a44bd
                 display: block;
 
                 p {
@@ -130,6 +134,14 @@
 
             .ingredientes{
                 display:none;
+                background-color: lighten($colorPrincipal, 25%);
+                width: auto;
+                height: 30%;
+
+                p{
+                    margin: 0;
+                    padding-top:10%;
+                }
             }
         }
     }
