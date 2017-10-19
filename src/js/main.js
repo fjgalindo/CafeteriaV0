@@ -15,6 +15,7 @@ window.onload=function(){
 
     document.getElementById("producto0").addEventListener("mouseover",mostrarIngredientes,false);
 
+
 }
 
 
@@ -88,12 +89,15 @@ function mostrarIngredientes(){
 
     var producto= document.getElementById("producto0");
 
-    producto.style.width="20%";
-    producto.style.height="50%";
-    producto.style.padding="5%";
+    producto.style.width="30%";
+    producto.style.height="55%";
+   // producto.style.padding="5%";
 
     var ingrediente= document.getElementById("ingrediente0");
     ingrediente.style.display="block";
+    ingrediente.style.border="black 2px solid";
 
 }
+
+
 
