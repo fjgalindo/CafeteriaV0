@@ -105,8 +105,11 @@ function mostrarIngredientes() {
     producto.style.height = "60%";
     producto.style.cursor = "pointer";
 
-    var foto = document.getElementById("foto_bocadillo" + numeroId);
-    foto.style.display = "none";
+    /*var foto = document.getElementById("foto_bocadillo" + numeroId);
+    foto.style.height="60%";*/
+
+    var info = document.getElementById("info_bocadillo" + numeroId);
+    info.style.display = "none";
 
     var ingrediente = document.getElementById("ingrediente" + numeroId);
     ingrediente.style.display = "block";
@@ -124,8 +127,11 @@ function ocultarIngredientes() {
     producto.style.width = "20%";
     producto.style.height = "40%";
 
-    var foto = document.getElementById("foto_bocadillo" + numeroId);
-    foto.style.display = "block";
+    var info = document.getElementById("info_bocadillo" + numeroId);
+    info.style.display = "block";
+
+     var foto = document.getElementById("foto_bocadillo" + numeroId);
+    foto.style.height = "70%";
 
     var ingrediente = document.getElementById("ingrediente" + numeroId);
     ingrediente.style.display = "none";
