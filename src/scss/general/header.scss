@@ -34,20 +34,21 @@ header {
         grid-area: "menu";
         font-size: 1.2em;
         font-family: 'Roboto', sans-serif;
-        margin-right: 1%;
-        ul {
+        text-align: right;
+        #lista_nav {
+            display: inline-flex;
+            justify-content: flex-end;
             @include layout(auto, 100%);
             padding: 0%;
             margin: 0%;
-            text-align: right;
-            li:not(#user_info) {
-                @include layout(auto, 100%);
+
+            > li:not(#user_panel) {
                 @include centrar-vertical;
                 color: whitesmoke;
                 /*text-shadow: 1px 1px 3px black;*/
                 font-weight: 600;
-
                 list-style-type: none;
+
                 a {
                     padding: 25px 0.5em;
                     color: whitesmoke;

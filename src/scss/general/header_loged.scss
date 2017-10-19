@@ -7,46 +7,46 @@ $user_info_background: darken($colorHeader, 2%);
 header {
     grid-template-columns: unquote("[col1] 30vw [col2] 70vw [col3]");
 
-    #navegacion {}
 }
 
-#user_info {
-    //background-color: $user_info_background;
-    @include layout(auto, 100%);
-    width: auto;
+#user_panel {
+    grid-area: "menu";
+    background-color: $user_info_background;
     list-style: none;
-    display: inline-block;
+    text-align: right;
     ul {
-
+        display: inline-flex;
+        justify-content: flex-end;
+        @include layout(auto, 100%);
+        padding: 0%;
+        margin: 0%;
         li {
-            padding: 0% 0.5em;
-            @include layout(auto, 100%);
-            @include centrar-vertical;
+            display: flex;
+            align-content: center;
             color: whitesmoke;
-            /*text-shadow: 1px 1px 3px black;*/
             font-weight: 600;
             list-style-type: none;
-            padding: 0;
-            margin-left: 15px;
-            #head_username {
-                label {}
-
+            background-color: $user_info_background;
+            #user_info {
+                @include centrar-vertical;
+                justify-content: space-around;
+                #head_userimg {
+                    @include layout(20%, auto);
+                }
             }
-            #head_userimg {
-                @include layout(auto, 40%);
+            #cart {
+                #cart_img {
+                    @include layout(12%, auto);
+                }
             }
-            #head_cart {
-                @include layout(auto, 50%);
+            #logoff {
+                #logoff_icon {
+                    border-radius: 10%;
+                    background-color: $colorPrincipal;
+                    padding: 10%;
+                    @include layout(90%, auto);
+                }
             }
-
-
-        }
-        li:hover {
-            cursor: pointer;
-                    background-color: lighten($colorHeader, 15%);
-        }
-        :active {
-            text-shadow: none;
         }
     }
 }
