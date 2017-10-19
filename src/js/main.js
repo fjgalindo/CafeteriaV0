@@ -93,7 +93,7 @@ function mostrarIngredientes(){
 
     producto.style.width="30%";
     producto.style.height="55%";
-   // producto.style.padding="5%";
+    producto.style.cursor="pointer";
 
     var ingrediente= document.getElementById("ingrediente0");
     ingrediente.style.display="block";
