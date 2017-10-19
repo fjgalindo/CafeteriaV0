@@ -90,15 +90,26 @@ function mostrarIngredientes(){
 
 
     var producto= document.getElementById("producto0");
+    var foto= document.getElementById("foto_bocadillo0");
+    var info= document.getElementById("info_bocadillo0");
 
-    producto.style.width="30%";
+    producto.style.width="25%";
     producto.style.height="55%";
     producto.style.cursor="pointer";
+    //producto.style.borderBottomLeftRadius="0px";
+    //producto.style.borderBottomRightRadiusRadius="0px";
+    foto.style.display="none";
+
+
+
 
     var ingrediente= document.getElementById("ingrediente0");
     ingrediente.style.display="block";
-    ingrediente.style.border="black 2px solid";
-
+    ingrediente.style.border="#2c2c2c 2px solid";
+    ingrediente.style.backgroundColor="rgba(255, 255, 255, 0.38);";
+    ingrediente.style.color="white";
+    ingrediente.style.width="auto";
+    ingrediente.style.height="70%";
 }
 
 function ocultarIngredientes(){
@@ -108,11 +119,11 @@ function ocultarIngredientes(){
 
     producto.style.width="20%";
     producto.style.height="40%";
-   // producto.style.padding="5%";
 
     var ingrediente= document.getElementById("ingrediente0");
     ingrediente.style.display="none";
-    //ingrediente.style.border="black 2px solid";
+
+
 
 }
 

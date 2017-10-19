@@ -105,6 +105,7 @@
 
             .foto_producto {
                 @include layout(auto, 70%);
+                display: block;
 
                 img {
                     @include layout(100%, 100%);
@@ -116,6 +117,7 @@
             .info_producto {
                 @include layout(auto, 30%);
                 background-color: lighten($colorPrincipal, 5%);
+                display: block;
 
                 p {
                     font-weight: bold;
