@@ -782,7 +782,6 @@ header {
       color: white; }
 
 #tienda {
-  display: none;
   margin: 0;
   padding: 7px;
   border: 1px solid black;
@@ -889,24 +888,7 @@ body {
   top: 0%;
   left: 0%;
   text-align: center;
-  color: white;
-  /*
-    #slider {
-        position: absolute;
-        z-index: -10;
-        #slider_imagenes {
-            margin: 0%;
-            padding: 0%;
-            .slider_card {
-                list-style-type: none;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
-    */ }
+  color: white; }
 
 #sobre_nosotros {
   background-color: rgba(36, 36, 36, 0.97);
