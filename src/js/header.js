@@ -22,6 +22,8 @@ function loadEvents() {
         }
     }, false);
 
+    document.getElementById("cart").addEventListener("click", mostrarcesta, false);
+
 }
 
 function mostrarlogin(evento) {
@@ -37,4 +39,12 @@ function mostrarlogin(evento) {
 function entrar() {
     alert("Bienvenido");
     $("#cabecera").load("./html/header_loged.html");
+}
+function mostrarcesta() {
+    var tienda = document.getElementById("tienda");
+    if (tienda.style.display == "none" || tienda.style.display == "") {
+        tienda.style.display = "block";
+    } else {
+        tienda.style.display = "none";
+    }
 }

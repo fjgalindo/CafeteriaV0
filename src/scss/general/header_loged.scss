@@ -10,33 +10,49 @@ header {
 }
 
 #user_panel {
-    grid-area: "menu";
-    background-color: $user_info_background;
+     @include layout(325px, auto);
+     margin-right: 2%;
     list-style: none;
     text-align: right;
+
     ul {
-        display: inline-flex;
+        display: flex;
         justify-content: flex-end;
+        align-items:center;
         @include layout(auto, 100%);
+
         padding: 0%;
         margin: 0%;
         li {
-            display: flex;
+            display: inline-flex;
             align-content: center;
             color: whitesmoke;
+            //margin-left: 20px;
+
             font-weight: 600;
             list-style-type: none;
-            background-color: $user_info_background;
+
+            *{
+                padding: 25px 0.5em;
+            }
             #user_info {
                 @include centrar-vertical;
                 justify-content: space-around;
+
+
                 #head_userimg {
-                    @include layout(20%, auto);
+                    @include layout(35px, auto);
+                    margin-left: 10px
                 }
+                :hover {
+
+                }
+
             }
             #cart {
+
                 #cart_img {
-                    @include layout(12%, auto);
+                    @include layout(31px, auto);
                 }
             }
             #logoff {
@@ -44,9 +60,14 @@ header {
                     border-radius: 10%;
                     background-color: $colorPrincipal;
                     padding: 10%;
-                    @include layout(90%, auto);
+                    @include layout(30px,auto);
                 }
             }
+
+
+                :active {
+                    text-shadow: 0px 0px 4px $colorPrincipal;
+                }
         }
     }
 }
