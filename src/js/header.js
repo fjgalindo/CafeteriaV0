@@ -21,8 +21,8 @@ function loadEvents() {
             //body.style.animation = "slider 20s infinite alternate linear paused";
         }
     }, false);
-
-    document.getElementById("cart").addEventListener("click", mostrarcesta, false);
+var carro=  document.getElementById("cart");
+    carro.addEventListener("click", mostrarcesta, false);
 
 }
 
