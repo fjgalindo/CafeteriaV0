@@ -1,0 +1,45 @@
+header {
+  grid-template-columns: [col1] 30vw [col2] 70vw [col3]; }
+
+#user_panel {
+  width: 325px;
+  height: auto;
+  margin-right: 2%;
+  list-style: none;
+  text-align: right; }
+  #user_panel ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    padding: 0%;
+    margin: 0%; }
+    #user_panel ul li {
+      display: inline-flex;
+      align-content: center;
+      color: whitesmoke;
+      font-weight: 600;
+      list-style-type: none; }
+      #user_panel ul li * {
+        padding: 25px 0.5em; }
+      #user_panel ul li #user_info {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around; }
+        #user_panel ul li #user_info #head_userimg {
+          width: 35px;
+          height: auto;
+          margin-left: 10px; }
+      #user_panel ul li #cart #cart_img {
+        width: 31px;
+        height: auto; }
+      #user_panel ul li #logoff #logoff_icon {
+        border-radius: 10%;
+        background-color: #FF5700;
+        padding: 10%;
+        width: 30px;
+        height: auto; }
+      #user_panel ul li :active {
+        text-shadow: 0px 0px 4px #FF5700; }

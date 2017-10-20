@@ -1,0 +1,54 @@
+#tienda {
+  display: none;
+  margin: 0;
+  padding: 7px;
+  border: 1px solid black;
+  border-top: none;
+  background-color: rgba(44, 44, 44, 0.95);
+  float: right;
+  margin-right: 2%;
+  width: 300px; }
+  #tienda ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+    margin: 3%;
+    margin-left: 4%; }
+    #tienda ul .row {
+      margin-bottom: 10%;
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      grid-template-areas: "imagen articulo" "imagen precio"; }
+      #tienda ul .row .imagen img {
+        width: 100px;
+        height: auto; }
+      #tienda ul .row .imagen {
+        width: 100px;
+        height: auto;
+        grid-area: imagen; }
+      #tienda ul .row .articulo {
+        width: auto;
+        height: auto;
+        grid-area: articulo; }
+        #tienda ul .row .articulo h5 {
+          margin: 0; }
+      #tienda ul .row .precio {
+        width: auto;
+        height: auto;
+        grid-area: precio; }
+  #tienda #pagar {
+    width: 80%;
+    height: 40px;
+    margin: 3%;
+    font-size: 130%;
+    background-color: #FF5700;
+    border-radius: 2%;
+    border: #FF5700 solid;
+    margin-left: 10%; }
+  #tienda #pagar:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 20px #FF5700;
+    -moz-box-shadow: 0px 0px 20px #FF5700;
+    box-shadow: 0px 0px 20px #FF5700; }

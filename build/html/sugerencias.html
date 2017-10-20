@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Cafeteria IESFSL | Buzón de sugerencias</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/index.css" />
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $("#cabecera").load("header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="cabecera"></div>
+
+    <div id="sugeren">
+        <h2>Buzón de sugerencias</h2>
+
+       <div class="container">
+  <form >
+
+
+    <label for="lemail">Email del instituto</label>
+    <input type="email" id="lemail" name="email" placeholder="Tu email">
+
+    <label for="opcion">Opciones</label>
+    <select id="opcion" name="opcion">
+      <option value="Felicitacion">Felicitación</option>
+      <option value="Sugerencia">Sugerencia</option>
+      <option value="Queja">Queja</option>
+    </select>
+
+    <label for="area">Comentario</label>
+    <textarea id="area" name="area" placeholder="Ayudanos a seguir mejorando"></textarea>
+
+    <input type="submit" id="btenviar"value="Enviar">
+  </form>
+</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
