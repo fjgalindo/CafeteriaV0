@@ -116,12 +116,7 @@
 
             .info_producto {
                 @include layout(auto, 30%);
-<<<<<<< HEAD
-                background-color: lighten($colorPrincipal, 8%);
-=======
                 background-color: lighten($colorPrincipal, 15%);
->>>>>>> 2617af8bda7835c56ec0c02006c761cf880a44bd
-                display: block;
 
                 p {
                     font-weight: bold;
